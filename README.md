@@ -20,6 +20,6 @@ This repository is setup for demoing purposes with running both the Agent and sh
 
 Please note: The agent does NOT always execute the code; occasionally, ChatGPT-3.5-Turbo may recognize the nature of the code (a reverse shell) and refuse to run it. With the given prompt, the code executes approximately 80% of the time.
 
-This code is research purposes only.
+This code is for research purposes only.
 
 Any questions please feel free to reach out!
