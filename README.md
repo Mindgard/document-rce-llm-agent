@@ -12,8 +12,14 @@ This repository demonstrates the use of a Langchain Agent to carry out Remote Co
 
 After approximately twenty seconds, you should see a connection to the socket initiated from the `run_shell_connection.py` script, indicating that the LLM agent has executed the hidden code at the beginning of the Word document.
 
+You can now execute commands that will be carried out through the reverse-shell on the device running the LLM. As this is a proof of concept, the reverse-shell is only suitable for basic single-step commands (ls, pwd, mkdir, rmdir, rm, etc.).
+
 To view the code in the Word document, open it in Microsoft Word, select all the text (CMD/CTRL + A), and then click the 'Show/Hide formatting marks' button in the Font section of the Home tab. The code text is hidden by setting the font effects to 'Hidden'.
 
+This repository is setup for demoing purposes with running both the Agent and shell connection on the same device. If you want to run this on seperate devices, set the address/port in `python run_shell_connection.py` to point to the device you will be running the Agent on. If you change the port in `python run_shell_connection.py`, you will need to also change the port specified in the hidden code within `Document_Processing_Instructions.docx` to match.
+
 Please note: The agent does NOT always execute the code; occasionally, ChatGPT-3.5-Turbo may recognize the nature of the code (a reverse shell) and refuse to run it. With the given prompt, the code executes approximately 80% of the time.
+
+This code is research purpose
 
 Any questions please feel free to reach out!
