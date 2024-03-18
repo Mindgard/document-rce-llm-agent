@@ -22,7 +22,6 @@ To view the code in the Word document, open it in Microsoft Word, select all the
 ## Usage Notes
 This repository is setup for demoing purposes with running both the Agent and shell connection on the same device. If you want to run this on seperate devices, set the address/port in `python run_shell_connection.py` to point to the device you will be running the Agent on. If you change the port in `python run_shell_connection.py`, you will need to also change the port specified in the hidden code within `Document_Processing_Instructions.docx` to match.
 
-## Please Note
 The agent does NOT always execute the code; occasionally, ChatGPT-3.5-Turbo may recognize the nature of the code (a reverse shell) and refuse to run it. With the given prompt, the code executes approximately 80% of the time.
 
 Any questions please feel free to reach out!
